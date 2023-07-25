@@ -1,12 +1,26 @@
+import java.util.Random;
+
 public class clg {
     private int roll_no;
     private String st_name;
     private String st_class;
-    private static String st_clg = " , Nashik ";
+    private static String st_clg ;
+//
+    private static int nxtr;
 
-    public clg(int roll_no, String st_name, String st_class)
+    static {
+
+        System.out.println("Static Block Worked");
+
+        nxtr = 1;
+        st_clg = " JESITMR, Nashik ";
+
+    }
+
+    public clg(String st_name, String st_class)
     {
-        this.roll_no = roll_no;
+        this.roll_no = nxtr;
+        nxtr++;
         this.st_name = st_name;
         this.st_class = st_class;
     }
@@ -35,7 +49,7 @@ public class clg {
         this.st_class = st_class;
     }
 
-    public String getSt_clg(){
+    public static String getSt_clg(){
         return st_clg;
     }
 
@@ -44,7 +58,7 @@ public class clg {
     }
 
     public void display(){
-        System.out.println(" The Roll No " + roll_no + " Has Assigned To Student " + st_name + " Who Is In " + st_class + " Class And " + st_clg );
+        System.out.println(" The Roll No " + roll_no + " Has Assigned To Student " + st_name + " Who Is In " + st_class + " Class And College Is: " + st_clg );
 
     }
 }

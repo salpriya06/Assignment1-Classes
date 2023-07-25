@@ -37,14 +37,26 @@ public class Main {
 //        p2.display();
 //        p3.display();
 
-        Maths m1 = Maths.getInstance();
-        System.out.println("Addition Is : " +m1.add(100,200));
+//        Maths m1 = Maths.getInstance();
+//        System.out.println("Addition Is : " +m1.add(100,200));
+//
+//        Maths m2 = Maths.getInstance();
+//        System.out.println("Addition Is : " +m1.sub(400,200));
+//
+//        Maths m3 = Maths.getInstance();
+//        System.out.println("Addition Is : " +m1.add(800,200));
 
-        Maths m2 = Maths.getInstance();
-        System.out.println("Addition Is : " +m1.sub(400,200));
+        System.out.println(" College Name : " + clg.getSt_clg());
 
-        Maths m3 = Maths.getInstance();
-        System.out.println("Addition Is : " +m1.add(800,200));
+        clg c1 = new clg("AA", "Fourth Year");
+        clg c2 = new clg("BB", "Second Year");
+        clg c3 = new clg("CC", "First Year");
+        clg c4 = new clg("DD", "Fourth Year");
+
+        c1.display();
+        c2.display();
+        c3.display();
+        c4.display();
 
     }
 }
